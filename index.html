@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biodata Saya</title>
+    <link rel="stylesheet" href="style-switch.css" />
+  </head>
+  <body class="light">
+    <div class="toggle-container">
+      <button id="toggleMode">🌙 Dark Mode</button>
+    </div>
+
+    <div class="container">
+      <div class="profile">
+        <img src="pasphoto.jpg" alt="Foto Saya" />
+        <h1>Kamil Azhar Nasution, S.Kom</h1>
+        <p>Web Developer 🚀</p>
+      </div>
+      <div class="details">
+        <h2>Tentang Saya</h2>
+        <p>
+          Halo! Ini adalah Halaman Biodata saya. Saya seorang Web Developer.
+        </p>
+
+        <h2>Contact Person : 0812-6262-3618</h2>
+        <ul>
+          <li>
+            Email:
+            <a href=Email.com" target="blank">kamilazhar62@gmail.com</a>
+          </li>
+          <li>
+            Instagram:
+            <a href="https://instagram.com/username" target="_blank"
+              >@kamil_azhar17</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/username" target="_blank"
+              >github.com/KaNz17</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const body = document.body;
+      const toggleBtn = document.getElementById("toggleMode");
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          toggleBtn.textContent = "☀️ Light Mode";
+        } else {
+          toggleBtn.textContent = "🌙 Dark Mode";
+        }
+      });
+    </script>
+  </body>
+</html>
